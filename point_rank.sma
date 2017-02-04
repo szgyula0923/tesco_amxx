@@ -42,6 +42,8 @@ public client_authorized(id, const authid[])
 	new iTimestamp;
 	new iDataExists;
 
+
+	log_amx(authid);
 	get_user_authid(id, g_sAuthID[id], charsmax(g_sAuthID));
 
 	iDataExists = nvault_lookup(g_iVault, g_sAuthID[id], sData, charsmax(sData), iTimestamp);
